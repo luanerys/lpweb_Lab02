@@ -1,7 +1,8 @@
 var numeros = [],
-    resultados = [];
+    resultados = [],
+    numeros2 = numeros.map(calculaQuadrado);
 
-numeros.forEach(calculaQuadrado);
+//numeros.forEach(calculaQuadrado);
 
 function calculaQuadrado() {
     var i;
@@ -15,7 +16,7 @@ function calculaQuadrado() {
     for (i = 0; i < numeros.length; i++) {
 
         if (isNaN(numeros[i]) || numeros[i] < 1) {
-            resultados = "Esse número não é válido!";
+            resultados = "Esse número não é válido!  ";
         } else {
             resultados += Math.pow(numeros[i], 2) + " | ";
         }

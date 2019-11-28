@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>
+        Maioridade
+    </title>
+</head>
+
+<body class="container">
+
+    <h3 id="titulo" class="text-center">Saiba quantas pessoas são maiores de idade</h3>
+
+    <p>Digite 3 idades</p>
+
+    <form class="form" name="formulario">
+        <div class="form-group">
+            <input id="primeira_idade" type="number">
+            <input id="segunda_idade" type="number">
+            <input id="terceira_idade" type="number">
+
+            <button type="button" onclick="calculaMaioridade()">Resultado</button>
+        </div>
+
+        <p id="resposta"></p>
+
+    </form>
+
+    <script src="js/operacoes.js"></script>
+
+</body>
+
+</html>
