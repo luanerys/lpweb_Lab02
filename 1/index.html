@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>
+        Calculadora Exponencial
+    </title>
+</head>
+
+<body class="container">
+
+    <h3 id="titulo" class="text-center">Descubra o quadrado dos números com Math.pow()</h3>
+
+    <p>Digite 5 números</p>
+
+    <form class="form" name="formulario">
+        <div class="form-group">
+            <input id="primeiro_numero" type="number">
+            <input id="segundo_numero" type="number">
+            <input id="terceiro_numero" type="number">
+            <input id="quarto_numero" type="number">
+            <input id="quinto_numero" type="number">
+
+            <button type="button" onclick="calculaQuadrado()">Calcular</button>
+        </div>
+
+        <p id="resposta"></p>
+
+    </form>
+
+    <script src="js/operacoes.js"></script>
+
+</body>
+
+</html>
