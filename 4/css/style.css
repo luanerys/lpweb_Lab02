@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+/*RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}*/
+
+body,
+p {
+    background-color: black;
+    font-family: "Source Sans Pro", sans-serif;
+    color: lavender;
+}
+
+title,
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: lavender;
+}
+
+button {
+    height: 16 px;
+    font-size: 15px;
+}
+
+input {
+    width: 140px;
+    font-size: 15px;
+}
+
+.form {
+    display: block;
+}
