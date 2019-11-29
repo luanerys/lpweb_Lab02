@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>
+        Lanchonete IFMA
+    </title>
+</head>
+
+
+<body class="container">
+
+    <form class="form" name="form1">
+        <legend>Lanchonete do IFMA</legend>
+
+        <div class="form-group">
+            <label for="nome">Nome do Cliente: </label>
+            <input id="nome" type="text" autofocus required>
+        </div>
+
+        <div class="form-group">
+            <label for="bebidas">Bebidas: </label><br><input type="radio" name="radioss" id="suco"> Suco <input type="radio" name="radios" id="refrigerante"> Refrigerante <input type="radio" name="radios" id="agua"> Água
+        </div>
+
+        <div class="form-group">
+            <label for="doces_salgados">Doces e Salgados:</label><br>
+            <input type="checkbox" id="bolo" name="check"> Bolo <input type="checkbox" id="pastel" name="check"> Pastel <input type="checkbox" id="torta" name="check"> Torta
+        </div>
+
+        <p id="resposta"></p>
+
+    </form>
+
+    <button type="button" onclick="calcularConta()">Calcular</button>
+    <button type="button" onclick="limparForm()">Limpar</button>
+
+    <script src="js/Pedidos.js"></script>
+
+</body>
+
+</html>
