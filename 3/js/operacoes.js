@@ -6,13 +6,13 @@ function invertePalavras() {
 
     var i, resultado = "";
 
-    palavras = document.getElementById("form1");
+    palavras = document.querySelector("#form1");
 
     //palavras.reverse();
 
     for (i = palavras.length - 1; i >= 0; i--) {
         resultado += palavras.elements[i].value + " | ";
 
-        document.getElementById("resposta").innerHTML = resultado;
+        document.querySelector("#resposta").innerHTML = resultado;
     }
 }

@@ -22,12 +22,17 @@
         </div>
 
         <div class="form-group">
-            <label for="bebidas">Bebidas: </label><br><input type="radio" name="radioss" id="suco"> Suco <input type="radio" name="radios" id="refrigerante"> Refrigerante <input type="radio" name="radios" id="agua"> Água
+            <label for="bebidas">Bebidas: </label><br>
+            <input type="radio" name="bebida" class="radios" value="suco"> Suco
+            <input type="radio" name="bebida" class="radios" value="refrigerante"> Refrigerante
+            <input type="radio" name="bebida" class="radios" value="agua"> Água
         </div>
 
         <div class="form-group">
             <label for="doces_salgados">Doces e Salgados:</label><br>
-            <input type="checkbox" id="bolo" name="check"> Bolo <input type="checkbox" id="pastel" name="check"> Pastel <input type="checkbox" id="torta" name="check"> Torta
+            <input type="checkbox" name="docesESalgados" class="check" value="bolo"> Bolo
+            <input type="checkbox" name="docesESalgados" class="check" value="pastel"> Pastel
+            <input type="checkbox" name="docesESalgados" class="check" value="torta"> Torta
         </div>
 
         <p id="resposta"></p>
