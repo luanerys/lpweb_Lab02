@@ -1,4 +1,4 @@
-## Coletânia de programas simples em JavaScript usando programação funcional
+## Coletânea de programas simples em JavaScript usando programação funcional
 
 ### Descrição
 1. Programa de cálculo exponencial;
