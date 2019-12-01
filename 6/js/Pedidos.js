@@ -57,9 +57,6 @@ function calcularConta() {
 
     total = totalComida + totalBebida;
 
-
-
-
     alert("Cliente: " + nome + "  Bebida: " + bebida + "Doces e Salgados: " + doce_salgado + "  Total a pagar: " + total);
 
 }
