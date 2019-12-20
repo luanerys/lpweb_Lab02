@@ -10,6 +10,6 @@ function formatarData() {
 
     var novaData = new Date(dataFormatada);
 
-    console.log(novaData.getDate() + ' de ' + meses[novaData.getMonth()] + ' de ' + novaData.getFullYear());
+    document.querySelector("#resposta").innerHTML = (novaData.getDate() + ' de ' + meses[novaData.getMonth()] + ' de ' + novaData.getFullYear());
 
 }
