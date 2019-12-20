@@ -30,6 +30,14 @@ var produtos = [{
     }
 ]
 
+let table = document.querySelector("#output");
+produtos.forEach(p => {
+    let row = table.insertRow();
+    row.insertCell().textContent = p.descricao;
+    row.insertCell().textContent = p.codigo;
+    row.insertCell().textContent = p.preco;
+});
+
 function calcularTotal() {
 
     var codigo = document.querySelector("#codigo").value;
