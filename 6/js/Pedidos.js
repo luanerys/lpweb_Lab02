@@ -32,8 +32,6 @@ function calcularConta() {
 
     let bebida = document.querySelector("input[name = bebida]:checked");
 
-
-
     let doce_salgado = document.querySelectorAll("input[name = docesESalgados]:checked");
 
 
@@ -42,21 +40,30 @@ function calcularConta() {
     var total = 0;
     var totalBebida = 0;
     var totalComida = 0.0;
+    
     for (i = 0; i < itens_bebidas.length; i++) {
         if (itens_bebidas[i].descricao == bebida.value)
-            totalBebida += itens_bebidas[i].preco;
 
+            totalBebida += itens_bebidas[i].preco;
     }
 
+    let str_doce_salg = '';
 
     for (j = 0; j < itens_comidas.length; j++) {
-        if (itens_comidas[j].descricao == doce_salgado[j]) {
-            totalComida += itens_comidas[j].preco;
+
+        for (i = 0; i < doce_salgado.length; i++) {
+
+            if (itens_comidas[j].descricao == doce_salgado[i].value) {
+
+                totalComida += itens_comidas[j].preco;
+                    
+                str_doce_salg += ' ' + doce_salgado[i].value;
+            }
         }
     }
 
     total = totalComida + totalBebida;
 
-    alert("Cliente: " + nome + "  Bebida: " + bebida + "Doces e Salgados: " + doce_salgado + "  Total a pagar: " + total);
+    alert("Cliente: " + nome + "  \nBebida: " + bebida.value + "\nDoces e Salgados: " + str_doce_salg + "  \nTotal a pagar: " + total);
 
 }
