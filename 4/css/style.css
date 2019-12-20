@@ -8,6 +8,14 @@
     border: 0;
 }*/
 
+table,
+tr,
+td {
+    border: 1px solid lightslategray;
+    border-collapse: collapse;
+    padding: 0.3em;
+}
+
 body,
 p {
     background-color: black;
